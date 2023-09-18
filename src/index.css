@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  /* Defina as classes de animação personalizadas */
+  .animate-heartbeat {
+    animation: heartbeat 3s infinite;
+  }
+
+  /* Defina a animação de batimento cardíaco */
+  @keyframes heartbeat {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
